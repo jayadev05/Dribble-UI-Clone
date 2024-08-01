@@ -22,6 +22,7 @@
   /* background-color: orangered; */
   text-align: center;
   gap: 5%;
+ 
 }
 #main h3:nth-child(1) {
   width: fit-content;
@@ -63,7 +64,7 @@
 #img-marquee {
   display: flex;
   width: 100%;
-  height: 45%;
+  height: 40%;
   /* background-color: aqua; */
   overflow-x: hidden;
 }
@@ -118,9 +119,10 @@
   padding: 3%;
   display: flex;
 }
+
 #nav-2-select {
   height: 40px;
-  width: 7.7%;
+  width: 110px;
   padding: 10px;
   background-color: white;
   color: rgb(13, 12, 33);
@@ -134,15 +136,17 @@
 
 #discover a {
   padding: 8px 10px;
-  /* background-color: aquamarine; */
   border-radius: 16px;
-  font-size: 14px;
+  font-size: clamp(12px,1vw,14px);
   font-family: Mona sans;
   font-weight: 600;
+  margin-right: 10px;
 }
+
 #discover a:hover {
-  color: rgb(94, 94, 94);
+  background-color: rgb(229, 229, 229);
 }
+
 #filter-btn {
   padding: 8px 16px;
   border: 1px solid rgb(199, 199, 199);
@@ -159,4 +163,58 @@
 }
 .active {
   background-color: rgb(242, 242, 242);
+}
+.load-more {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 1.5rem 0;
+}
+.load-more a {
+  color: black;
+  background-color: rgb(234, 234, 234);
+  padding: 12px;
+  border-radius: 32px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.load-more a:hover {
+  background-color: rgb(191, 194, 194);
+}
+
+
+/* responsive */
+
+@media (max-width: 500px) {
+  #discover a {
+    display: none;
+  }
+  #image-con{
+    width: 200%;
+  }
+  #img-marquee{
+    height: 35%;
+  }
+
+}
+@media (max-width:700px) {
+  
+#discover a{
+  display: none;
+}
+  
+}
+
+@media (max-width:1343px) {
+  #discover a{
+    margin-right: 1px;
+  }
+  .discover-menu{
+    text-wrap: nowrap;
+    overflow: hidden;
+  }
+  
 }

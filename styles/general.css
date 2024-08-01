@@ -15,3 +15,7 @@ main {
 main {
   padding: 0% 2%;
 }
+
+body{
+  position: relative;
+}
