@@ -106,7 +106,7 @@
 }
 #img-overlay h3:nth-child(2) {
   color: white;
-  font-size: clamp(8px,1.1vw,18px);
+  font-size: clamp(12px,1.1vw,18px);
   font-family: Mona sans;
 }
 
